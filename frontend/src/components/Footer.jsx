@@ -1,6 +1,7 @@
 import React from 'react'
-import { FaFacebookF, FaTwitter, FaYoutube, FaGoogle, FaTiktok, FaInstagram, FaLinkedin, FaArrowUp } from 'react-icons/fa';
-
+import { MdEmail } from "react-icons/md";
+import { IoCall } from "react-icons/io5";
+import { FaLocationDot } from "react-icons/fa6";
 const Footer = () => {
     return (
         <footer className='bg-[#0D1B2A] text-gray-300 pt-16 pb-8 px-6 lg:px-8'>
@@ -36,9 +37,9 @@ const Footer = () => {
                 <div>
                     <h3 className="font-semibold text-lg mb-4">Contact</h3>
                     <ul className="space-y-2 text-gray-400">
-                        <li><span>abc123@gmail.com</span></li>
-                        <li><span>+91-3456784567</span></li>
-                        <li><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. </span></li>
+                        <li className='flex items-center gap-1'><MdEmail /><span>abc123@gmail.com</span></li>
+                        <li className='flex items-center gap-1'><IoCall /><span>+91-3456784567</span></li>
+                        <li ><span className='flex items-center gap-1'><FaLocationDot />Lorem ipsum dolor sit amet </span><span>consectetur adipisicing elit. </span></li>
                     </ul>
                 </div>
             </div>
